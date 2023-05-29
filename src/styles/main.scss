@@ -1,0 +1,78 @@
+@import url(form.scss);
+
+input, textarea {
+    outline: none;
+    &::placeholder {
+        color: #B0A6BD;
+    }
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    color: #383838;
+}
+
+//все кнопки
+button {
+    background-color: #F5A3B7;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: .6em .8em;
+    &.fluid {
+        width: 100%;
+    }
+}
+
+//все card
+.card {
+    &.auth {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    background-color: white;
+    box-shadow: 0px 2px 20px rgba(176, 166, 189, 0.15);
+    border-radius: 6px;
+    padding: 3rem 6rem;
+}
+
+//header в форме
+.header {
+    font-size: 1.2em;
+    font-weight: 600;
+    &:not(:last-child) {
+        margin-bottom: 1em;
+    }
+    .subheader {
+        font-size: .62em;
+        font-weight: 400;
+        color: #B0A6BD;
+    }
+}
+
+.large {
+    font-size: 1.5em;
+}
+
+.aligned {
+    &.center {
+        text-align: center;
+    }
+}
+
+//уведомления
+.message {
+    padding: .6em .8em;
+    border-radius: 4px;
+    font-size: .75em;
+    margin-top: .8em;
+    
+    &.red {
+        color: #E77373;
+        background-color: rgba(240, 154, 155, 0.1);
+       
+    }
+
+}
