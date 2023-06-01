@@ -1,24 +1,34 @@
 import { NavLink, useLocation } from "react-router-dom";
 import pagesRoutes from "../../routes/pagesRoutes";
 
-
+import { CartIcon } from "../../assets";
+import { SearchIcon } from "../../assets";
+import { AccountIcon } from "../../assets";
 
 export const Header = () => {
     const location = useLocation();
     
     return (
     <header>
-    <h3>Header</h3>
-    <nav>
-        <NavLink
+
+    <nav className="menu">
+        
+        <NavLink 
             to={pagesRoutes.MAIN}
             className={pagesRoutes.MAIN === location.pathname ? "active" : ""}
             /* className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
             } */
             >
-            BLOOM BEAUTY
-        </NavLink> {" "}
+                <div className="main">
+                    <span className = "pink">BLOOM </span>
+                    <span>BEAUTY</span>
+                </div>
+           
+        </NavLink>
+
+        <div className="link_pages">
+
         <NavLink
             to={pagesRoutes.CATALOG}
             className={pagesRoutes.CATALOG === location.pathname ? "active" : ""}
@@ -27,7 +37,7 @@ export const Header = () => {
             } */
             >
             SHOP
-        </NavLink>{" "}
+        </NavLink>
         <NavLink
             to={pagesRoutes.BESTSELLERS}
             className={pagesRoutes.BESTSELLERS === location.pathname ? "active" : ""}
@@ -36,7 +46,7 @@ export const Header = () => {
             } */
             >
             BESTSELLERS
-        </NavLink>{" "}
+        </NavLink>
         <NavLink
             to={pagesRoutes.COLLECTION}
             className={pagesRoutes.COLLECTION === location.pathname ? "active" : ""}
@@ -45,7 +55,7 @@ export const Header = () => {
             } */
             >
             COLLECTION
-        </NavLink>{" "}
+        </NavLink>
         <NavLink
             to={pagesRoutes.ABOUTUS}
             className={pagesRoutes.ABOUTUS === location.pathname ? "active" : ""}
@@ -54,7 +64,7 @@ export const Header = () => {
             } */
             >
             ABOUT US
-        </NavLink>{" "}
+        </NavLink>
         <NavLink
             to={pagesRoutes.BLOG}
             className={pagesRoutes.BLOG === location.pathname ? "active" : ""}
@@ -63,7 +73,19 @@ export const Header = () => {
             } */
             >
             BLOG
-        </NavLink>{" "}
+        </NavLink>
+        </div>
+        <div className="link_icon">
+        <NavLink
+            to={pagesRoutes.SEARCH}
+            className={pagesRoutes.SEARCH === location.pathname ? "active" : ""}
+            /* className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+            } */
+            >
+                <SearchIcon/>
+            SEARCH
+        </NavLink>
         <NavLink
             to={pagesRoutes.ACCOUNT}
             className={pagesRoutes.ACCOUNT === location.pathname ? "active" : ""}
@@ -71,9 +93,21 @@ export const Header = () => {
                 isPending ? "pending" : isActive ? "active" : ""
             } */
             >
+                <AccountIcon/>
             ACCOUNT
-        </NavLink>{" "}
-
+        </NavLink>
+        <NavLink
+            to={pagesRoutes.CART}
+            className={pagesRoutes.CART === location.pathname ? "active" : ""}
+            /* className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "active" : ""
+            } */
+            >
+                <CartIcon/>
+            CART
+        </NavLink>
+        </div>
+        
     </nav>
     </header>
   )

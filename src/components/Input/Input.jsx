@@ -9,6 +9,7 @@ export const Input = forwardRef (
         type = {type} 
         value = {value}
         placeholder={placeholder} 
+        autoComplete="true"
         onChange={onChange} 
         ref = {ref}
         {...rest}/>

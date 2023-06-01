@@ -9,6 +9,8 @@ import { AboutUs } from "../pages/AboutUs/AboutUs";
 import { Bestsellers } from "../pages/Bestsellers/Bestsellers";
 import { Collection } from "../pages/Collection/Collection";
 import { Account } from "../pages/Account/Account";
+import { Search } from "../pages/Search/Search";
+import { Cart } from "../pages/Cart/Cart";
 
 import { Header } from "../containers/Header/Header";
 import { Footer } from "../containers/Footer/Footer";
@@ -98,6 +100,16 @@ export const router = createBrowserRouter([
         ),
       },
       {
+        path: pagesRoutes.SEARCH,
+        element: (
+                 <>
+                    <Header/>
+                    <Search/>
+                    <Footer/>
+                 </>
+        ),
+      },
+      {
         path: pagesRoutes.ACCOUNT,
         element: (
                  <>
@@ -107,5 +119,16 @@ export const router = createBrowserRouter([
                  </>
         ),
       },
+      {
+        path: pagesRoutes.CART,
+        element: (
+                 <>
+                    <Header/>
+                    <Cart/>
+                    <Footer/>
+                 </>
+        ),
+      },
+      
     
   ]);

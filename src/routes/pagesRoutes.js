@@ -8,7 +8,9 @@ const pagesRoutes = {
     ABOUTUS: '/about',
     BESTSELLERS: '/bestsellers',
     COLLECTION: '/collection',
-    ACCOUNT: '/account'
+    ACCOUNT: '/account',
+    SEARCH: '/search',
+    CART: '/cart',
 
 }
 export default pagesRoutes

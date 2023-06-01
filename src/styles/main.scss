@@ -1,4 +1,6 @@
 @import url(form.scss);
+@import url(header.scss);
+@import url(footer.scss);
 
 input, textarea {
     outline: none;
@@ -8,6 +10,7 @@ input, textarea {
 }
 
 body {
+    
     font-size: 14px;
     margin: 0;
     color: #383838;
@@ -26,7 +29,7 @@ button {
     }
 }
 
-//все card
+//все card - окна для регистрации и входа
 .card {
     &.auth {
         max-width: 500px;

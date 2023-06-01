@@ -1,0 +1,37 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: white;
+    color: #383838;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 1em 10em 0;
+    box-shadow: 0px 2px 10px rgba(185, 166, 189, 0.1);
+        &:hover {
+            color: #F5A3B7;
+        }
+    .main {
+        font-weight: 500;
+        font-size: 1.7em; 
+        .pink {
+            color:#F5A3B7;
+        }   
+    }
+    .link_pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .link_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+    }
+    
+}
