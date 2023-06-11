@@ -1,0 +1,26 @@
+.section {
+    padding: 7.28em var(--side-padding);
+    background-color: #F5E0E5;
+    background-image: url('../../assets/images/Rectangle3.png');
+    background-repeat-x: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+}
+
+.header {
+    font-size: 2.57em;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 560px;
+    .subheader {
+        font-size: .66em;
+        text-transform: none;
+        color: inherit;
+        margin-top: 1.43rem;
+    }
+}
+
+.button {
+    padding: .7em 6.4em;
+    text-align: center;
+}

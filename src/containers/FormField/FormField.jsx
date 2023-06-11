@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import { Input } from "../../components/Input/Input";
+import { Input } from "components";
 
 export const FormField = forwardRef (
   ({labelName, type, value, placeholder, onChange, error, ...rest}, ref) => {

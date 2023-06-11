@@ -2,6 +2,10 @@
 @import url(header.scss);
 @import url(footer.scss);
 
+:root {
+    --side-padding: 352px;
+}
+
 input, textarea {
     outline: none;
     &::placeholder {
@@ -12,8 +16,16 @@ input, textarea {
 body {
     
     font-size: 14px;
-    margin: 0;
+    margin: 0 auto;
     color: #383838;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
 }
 
 //все кнопки
@@ -24,6 +36,7 @@ button {
     font-weight: 600;
     border: none;
     padding: .6em .8em;
+    cursor: pointer;
     &.fluid {
         width: 100%;
     }
@@ -78,4 +91,27 @@ button {
        
     }
 
+}
+
+.flex {
+    display: flex;
+    &.centered {
+        align-items: center;
+    }
+}
+
+.pink {
+    color: #F5A3B7;
+}
+
+.grey {
+    color: #BFB9CF;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.nowrap {
+    white-space: nowrap;
 }

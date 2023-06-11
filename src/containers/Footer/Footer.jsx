@@ -1,71 +1,73 @@
-import { Input } from "../../components/Input/Input";
-import { Button } from "../../components/Button/Button";
+import { Link } from "react-router-dom";
+import { Input } from "components";
 
-import { FacebookIcon } from "../../assets";
-import { TwitterIcon } from "../../assets";
-import { InstagramIcon } from "../../assets";
-import { PinterestIcon } from "../../assets";
-import { TelegramIcon } from "../../assets";
-import { CallIcon } from "../../assets";
-import { MessageIcon} from "../../assets";
-import { LocationIcon } from "../../assets";
-import { ArrowRightIcon } from "../../assets";
+import { FacebookIcon, TwitterIcon, InstagramIcon, PinterestIcon, TelegramIcon, CallIcon, MessageIcon, LocationIcon, ArrowRightIcon } from "assets";
 
 export const Footer = () => {
   return (
     <div className="footer">
       <div className="link_social">
-          <FacebookIcon/>
+          <Link to = "/"><FacebookIcon/></Link>
           <PinterestIcon/>
           <TwitterIcon/>
           <InstagramIcon/>
           <TelegramIcon/>
       </div>
-      <div className="main_info">
+      <nav>
            
-        <div className="info">
-          Bloom Beauty
-          Discover nature's beauty with our natural care products.
-        </div>
-        <div className="call">
-          <CallIcon/>
-        + 47 050 123 45 67
-        </div>
-        <div className="mail">
-          <MessageIcon/>
-          bloombt@kmail.com 
-        </div>
-        <div className="location">
-          <LocationIcon/>
-          Sydney, Australia
-        </div>
-        <div className="navigation">
-          <div className="">
-          Help
-          Contact us
-          FAQ
-          Shipping & Returns
+        <div className="link-group">
+          <div className="logo header">
+            <span className="pink">Bloom</span>&nbsp;Beauty
           </div>
-          <div className="">
-          MY ACCOUNT
-          Addresses
-          Order Status
-          Wishlist
+          <div className="small text">Discover nature's beauty with our natural care products.</div>
+          <div className="icon text">
+            <CallIcon/>&nbsp;+ 47 050 123 45 67
           </div>
-          <div className="">
-          CUSTOMER CARE
-          About us
-          Blog
+          <div className="icon text">
+            <MessageIcon/>&nbsp;bloombt@kmail.com 
+          </div>
+          <div className="icon text">
+            <LocationIcon/>&nbsp;Sydney, Australia
           </div>
         </div>
-        <div className="subscribe">
-          SIGN UP FOR EMAILS
-          Stay informed, subscribe to our newsletter now!
-          <Input/>
-          <Button>Subscribe</Button>
-          <ArrowRightIcon/>
+        <div className="link-group">
+          <div className="upper grey header">
+            Help
+          </div>
+          <div className="link text">Contact us</div>
+          <div className="link text">FAQ</div>
+          <div className="link text">Shipping & Returns</div>
         </div>
-      </div>
+        <div className="link-group">
+          <div className="upper grey header">
+            My Acoount
+          </div>
+          <div className="link text">Addresses</div>
+          <div className="link text">Order Status</div>
+          <div className="link text">Wishlist</div>
+        </div>
+        <div className="link-group">
+          <div className="upper grey header">
+            Custom Care
+          </div>
+          <div className="link text">About Us</div>
+          <div className="link text">Blog</div>
+        </div>
+        <div className="link-group">
+          <div className="upper header">
+            SIGN UP FOR EMAILS
+          </div>
+          <span className="small text">Stay informed, subscribe to our newsletter now!</span>
+          <div className="text">
+            <div className="form">
+              <div className="field"><Input placeholder = "Email"/></div>
+            </div>
+          </div>
+          <div className="link text">
+            Subscribe&nbsp;<ArrowRightIcon/>
+          </div>
+        </div>
+      </nav>
     
       <div className="policy">
         <div>

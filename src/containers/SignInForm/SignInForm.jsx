@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { Button } from "../../components/Button/Button";
+import { Button } from "components";
 
 import { Schema } from "./data";
 
-import { FormField } from "../FormField/FormField";
+import { FormField } from "containers";
 
 
 

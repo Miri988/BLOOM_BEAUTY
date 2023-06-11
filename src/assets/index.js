@@ -19,3 +19,5 @@ export { ReactComponent as LocationIcon } from "./images/Location.svg";
 export { ReactComponent as CallIcon } from "./images/Call.svg";
 export { ReactComponent as MessageIcon } from "./images/Message.svg";
 export { ReactComponent as ArrowRightIcon} from "./images/ArrowRight.svg";
+export { ReactComponent as FontPinkIcon } from "./images/font-pink.svg";
+export { ReactComponent as MaskGroupIcon } from "./images/Mask-group.svg";

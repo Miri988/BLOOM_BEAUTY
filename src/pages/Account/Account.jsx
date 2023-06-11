@@ -1,4 +1,4 @@
-import { SignInForm } from "../../containers/SignInForm/SignInForm"
+import { SignInForm } from "containers";
 import { useEffect } from "react";
 
 import styles from "./Account.module.scss"
