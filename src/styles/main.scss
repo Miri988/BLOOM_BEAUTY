@@ -1,9 +1,18 @@
 @import url(form.scss);
 @import url(header.scss);
 @import url(footer.scss);
+@import url(icofont.min.css);
+@import url(item_card.scss);
+@import url(slider.scss);
+@import url(blog_card.scss);
+
 
 :root {
     --side-padding: 352px;
+}
+
+div {
+    position: relative;
 }
 
 input, textarea {
@@ -14,7 +23,7 @@ input, textarea {
 }
 
 body {
-    
+    background-color: #FCFCFF;
     font-size: 14px;
     margin: 0 auto;
     color: #383838;
@@ -39,6 +48,16 @@ button {
     cursor: pointer;
     &.fluid {
         width: 100%;
+    }
+    &.secondary {
+        padding: .8em .8em;
+        color: black;
+        border: 1px solid black;
+        background-color: transparent;
+        &:hover {
+            color: white;
+            background-color: black;
+        }
     }
 }
 
@@ -65,6 +84,19 @@ button {
         font-size: .62em;
         font-weight: 400;
         color: #B0A6BD;
+        text-transform: none;
+    }
+    >img {
+        margin: 0 .6em;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &.heavier {
+        font-weight: 700;
     }
 }
 
@@ -114,4 +146,42 @@ button {
 
 .nowrap {
     white-space: nowrap;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.image {
+    &.square {
+        >.content {
+            height: 0;
+            padding-bottom: 100%;
+            &.posts {
+                img {
+                    height: fit-content;
+                    position: relative;
+                }
+            }
+        }
+    }
+    &.rectangle {
+        >.content {
+            height: 0;
+            padding-bottom: 60%;
+        }
+    }
+    
+    img {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.kits {
+    padding: 5.71em 0 0;
 }

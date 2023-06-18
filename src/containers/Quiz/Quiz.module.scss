@@ -1,0 +1,36 @@
+.quiz {
+    display: flex;
+    justify-content: center;
+    padding: 2.14em 0;
+    margin: 2.57em 0;
+    background-color: #FEE2E34d;
+    .content {
+        margin-right: -12em;
+        width: 440px;
+        
+    }
+    .image {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+    }
+    .header {
+        color: #383838;
+        font-weight: 700;
+        font-size: 2.57em;
+        margin-bottom: 1.57rem;
+
+    }
+    .description {
+        font-size: 1.28em;
+        color: #697586;
+        margin-bottom: 1.57rem;
+    }
+    
+}
+
+.button {
+    padding: .7em 6.4em;
+    text-align: center;
+}

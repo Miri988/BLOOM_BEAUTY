@@ -1,0 +1,25 @@
+.blog-card {
+    display: inline-block;
+    background-color: white;
+    max-width: 600px;
+    border-radius: .43em;
+    overflow: hidden;
+    >.content {
+        padding: 1.43em;
+        >* {
+            &:not(:first-child) {
+                margin-top: .71em;
+            }
+        }
+        >.header, .price {
+            font-size: 1.14em;
+        }
+        >.description {
+            color: #697586;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 2px 10px rgba(185, 166, 189, 0.1);
+        cursor: pointer;
+    }
+}

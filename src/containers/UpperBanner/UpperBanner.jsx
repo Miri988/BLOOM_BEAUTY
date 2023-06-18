@@ -2,7 +2,7 @@ import styles from "./UpperBanner.module.scss"
 import { Button } from "components";
 
 export const UpperBanner = () => {
-    console.log(styles)
+    
     return (
         <section className={styles.section}>
             <div className={`header ${styles.header}`}>

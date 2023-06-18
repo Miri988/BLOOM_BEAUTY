@@ -1,0 +1,50 @@
+.insta {
+    text-align: center;
+    padding: 5.71em var(--side-padding) 80px;
+    >.shots {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 15px 0 0;
+        padding: 2em;
+    }
+    >button {
+        width: 246px;
+    }
+    .post {
+        &:hover{
+            >.cover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+        padding: 1.57em 3.35em;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+   
+}
+
+.header {
+    font-size: 1.71em;
+}
+
+.button {
+    text-align: center;
+    &.preview {
+        background: rgba(56, 56, 56, 0.4);
+        margin-bottom: 1em;
+    }
+}
