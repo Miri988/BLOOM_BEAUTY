@@ -2,7 +2,7 @@ const pagesRoutes = {
     
     MAIN: '/',
     CATALOG: '/catalog',
-    PRODUCTCARD: '/product_card',
+    PRODUCTCARD: '/catalog/:productId',
     BLOG: '/blog',
     BLOGPOST: '/posts',
     ABOUTUS: '/about',

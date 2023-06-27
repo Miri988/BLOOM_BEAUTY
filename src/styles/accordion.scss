@@ -1,0 +1,29 @@
+.accordion {
+    >.title {
+        font-weight: 600;
+        padding: 1em 0;
+        .icon {
+            float: right;
+            transform: rotate(-90deg);
+            color: #B0A6BD;
+            font-size: 1.2em;
+        }
+    }
+    >.content {
+        opacity: 0;
+        height: 0;
+        padding: 0 .5em;
+        padding-top: 0;
+    }
+    &.expanded {
+        .content {
+            opacity: 1;
+            height: auto;
+        }
+        >.title {
+            .icon {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

@@ -12,6 +12,11 @@
                 flex-shrink: 0;
                 display: flex;
                 gap: 1em;
+                >img {
+                    object-fit: cover;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
             }
         }
     }
@@ -45,6 +50,14 @@
         &.icofont-rounded-right {
             right: 0;
             transform: translate(50%, -50%);
+        }
+    }
+    &.basic {
+        >.dots {
+            display: none;
+        }
+        >.icon {
+            font-size: 1.4em;
         }
     }
     >.dots {

@@ -128,7 +128,5 @@ export const router = createBrowserRouter([
                     <Footer/>
                  </>
         ),
-      },
-      
-    
+      }, 
   ]);

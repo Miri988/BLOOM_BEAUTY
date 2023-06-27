@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export const Slider = (props) => {
-    const { children, size } = props
-    const [index, setIndex] = useState(0)
-    const [shift, setShift] = useState(0)
+    const { children, size, className, initial = 0, onChange } = props
+    const [index, setIndex] = useState(initial)
+    const [shift, setShift] = useState(100 * -1 * initial)
     const slides = Array(Math.ceil(children.length / (size ?? 1))).fill().map((_v, i) => {
         return <div className="slide" key={i}>
             {children.slice(i, i + size)}
@@ -19,10 +19,15 @@ export const Slider = (props) => {
         }
         setIndex(r)
         setShift(100 * -1 * r)
+        onChange && onChange(r)
     }
 
+    useEffect(() => {
+        setItem(initial)
+    }, [initial]);
+
     return (
-        <div className="slider">
+        <div className={`slider ${className}`}>
             <div className="content">
                 <div className="slides" style={{marginLeft: `${shift}%`}}>
                     {slides}

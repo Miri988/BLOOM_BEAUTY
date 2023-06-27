@@ -1,0 +1,25 @@
+.pagination {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    .pages{
+        display: flex;
+        gap: 10px;
+        margin: 0 20px;
+    }
+    .icon {
+        background-color: #BFB9CF;
+        border-radius: 50%;
+        color: white;
+        padding: 3px;
+    }
+    .page{
+        &.active{
+            text-decoration: underline;
+        }
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

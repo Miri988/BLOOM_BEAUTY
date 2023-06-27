@@ -1,0 +1,10 @@
+.filter {
+    .item {
+        + .item {
+            border-top: 1px solid #DFE1E3;
+        }
+    }
+    .filter-value:last-child {
+        margin-bottom: .5em;
+    }
+}
